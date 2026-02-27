@@ -60,7 +60,7 @@ export default function ShareModal({
   }, [open]);
 
   const shareUrl = typeof window !== "undefined"
-    ? `${window.location.origin}${process.env.NEXT_PUBLIC_BASE_PATH || ""}/diagnostic?r=${encodeAnswers(answers)}`
+    ? `${window.location.origin}${process.env.NEXT_PUBLIC_BASE_PATH || ""}/diagnostic-demo?r=${encodeAnswers(answers)}`
     : "";
 
   const handleEmail = useCallback(() => {
